@@ -43,4 +43,3 @@ _Almost all brands will say “super-fine” but you will still need to sieve an
 
 ### Suggestions for the Filling
 _For my macaron filling I whipped up a batch of creamy, custardy French buttercream using my left over yolks to fill my shells but you can use ANY macaron filling you like!! Try an American buttercream, Italian meringue buttercream, a whipped ganache or a disk of ice cream!_
-
