@@ -12,40 +12,32 @@ _Almost all brands will say “super-fine” but you will still need to sieve an
 
 ### Steps
 
-**Step 1:**
-_Sieve_ the icing sugar and the ground almonds together in a large bowl and whisk together.
+1. _Sieve_ the icing sugar and the ground almonds together in a large bowl and whisk together.
 
-**Step 2:**
-Whiz the dry ingredients in the food processor and then sieve again. Repeat this process two more times. Seems like a lot but this is how you get a nice smooth top.
+2. Whiz the dry ingredients in the food processor and then sieve again. Repeat this process two more times. Seems like a lot but this is how you get a nice smooth top.
 
-**Step 3:**
-Whip the egg whites with the cream or tartar. Add salt and gradually add the sugar. Mix until the merengue reaches the soft peak stage. Add vanilla and any gel food coloring in at this point.
+3. Whip the egg whites with the cream or tartar. Add salt and gradually add the sugar. Mix until the merengue reaches the soft peak stage. Add vanilla and any gel food coloring in at this point.
 
-**Step 4:**
-The meringue needs to be whipped to _STIFF_ peaks so it’s actually best to finish the whisking off by hand. This way you’ll have a better feel for then the meringue is done.
+4. The meringue needs to be whipped to _STIFF_ peaks so it’s actually best to finish the whisking off by hand. This way you’ll have a better feel for then the meringue is done.
 
-**Step 5:**
-Add a third of the confectioner’s sugar and almond mixture and fold in gently. Move the spatula in circular motions bringing material from underneath to the top. Add the remaining dry mixture and continue folding. See the section on macaronage below for some more details.
+5. Add a third of the confectioner’s sugar and almond mixture and fold in gently. Move the spatula in circular motions bringing material from underneath to the top. Add the remaining dry mixture and continue folding. See the section on macaronage below for some more details.
 
-**Step 6:**
-You’ll know it’s ready when it has a _“lava-like”_ consistency, forming a thick ribbon that slowly blends back into itself when drizzled from your spatula. A figure “8” test will tell you when the consistency is correct. The batter should drizzle off the spatula and form an eight. Stop immediately at this point.
+6. You’ll know it’s ready when it has a _“lava-like”_ consistency, forming a thick ribbon that slowly blends back into itself when drizzled from your spatula. A figure “8” test will tell you when the consistency is correct. The batter should drizzle off the spatula and form an eight. Stop immediately at this point.
 
-**Step 7:**
-Transfer batter to a pastry bag fitted with a round tip, I usually use a 12 tip. Pipe onto a sheet of parchment paper fixed to a cookie sheet. You can use some batter as glue to hold the sheet steady. _Pipe perpendicular to the surface_ and try to be consistent with the sizes. You can print a guide out and have it below the parchment paper to help you pipe uniform circles. When you are finishing the piping motion stop squeezing the bag and pull up with a circular motion.
+7. Transfer batter to a pastry bag fitted with a round tip, I usually use a 12 tip. Pipe onto a sheet of parchment paper fixed to a cookie sheet. You can use some batter as glue to hold the sheet steady. _Pipe perpendicular to the surface_ and try to be consistent with the sizes. You can print a guide out and have it below the parchment paper to help you pipe uniform circles. When you are finishing the piping motion stop squeezing the bag and pull up with a circular motion.
 
-**Step 8:**
-_Tap the tray several times to remove air bubbles._ Allow to sit for 40-60 minutes so the macaron batter forms a skin. You should be able to touch the shell and feel a dry surface. Heat oven to 300F. Bake for 12-15 minutes. You’ll know they’re done if the macaron shells don’t wobble when you move them, but if they do then you may need to give them a bit more time in the oven if they are not done. Allow them to cool for about 10 minutes on the pan then transfer to a wire rack to cool completely. Pipe your filling onto the back of half the macaron shells. Form a sandwich and your french macarons are ready to enjoy!
+8. _Tap the tray several times to remove air bubbles._ Allow to sit for 40-60 minutes so the macaron batter forms a skin. You should be able to touch the shell and feel a dry surface. Heat oven to 300F. Bake for 12-15 minutes. You’ll know they’re done if the macaron shells don’t wobble when you move them, but if they do then you may need to give them a bit more time in the oven if they are not done. Allow them to cool for about 10 minutes on the pan then transfer to a wire rack to cool completely. Pipe your filling onto the back of half the macaron shells. Form a sandwich and your french macarons are ready to enjoy!
 
 ---
 
 ### Additional Tips
-_When you fold that STIFF meringue with the almond sugar mixture it will start off looking really rough but as you continue folding if will become silkier and begin to flow off the spatula in a slow, thick and steady drizzle._
+* _When you fold that STIFF meringue with the almond sugar mixture it will start off looking really rough but as you continue folding if will become silkier and begin to flow off the spatula in a slow, thick and steady drizzle._
 
-_You’ll want to deflate SOME of the bubbles in the mixture so you can gently swipe the spatula over the surface of the batter to help remove some of them._
+* _You’ll want to deflate SOME of the bubbles in the mixture so you can gently swipe the spatula over the surface of the batter to help remove some of them._
 
-_Some recipes give you a specific number of folds but I’ve found that you really need to gently fold and smooth the batter until it tells you to stop. If it’s humid outside or the temperature is warm or cold that day your macaronage will be affected._
+* _Some recipes give you a specific number of folds but I’ve found that you really need to gently fold and smooth the batter until it tells you to stop. If it’s humid outside or the temperature is warm or cold that day your macaronage will be affected._
 
-_As your batter reaches the desired stage you’ll see it become shiny and slowly fall off the spatula in a ribbon that can form a figure “8” without breaking. When you press the batter big air bubbles will not be present._
+* _As your batter reaches the desired stage you’ll see it become shiny and slowly fall off the spatula in a ribbon that can form a figure “8” without breaking. When you press the batter big air bubbles will not be present._
 
 ---
 
