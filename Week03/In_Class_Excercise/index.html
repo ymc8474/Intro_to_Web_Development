@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <title>Intro to CSS Text and Spans</title>
+         <!-- this is how you write an internal style sheet -->
+         <!-- These styles apply only to this page they are defined in -->
+         <style type="text/CSS">
+            /* universal selector to zero out the default margins on everything on the */
+            * {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                /* read the first font and if it doesn't exist, it moves on to the next one */
+            }
+
+            /* tag selectors apply to every instance of a tag on the page */
+            h2 {
+                color: blueviolet;
+                background-color: chartreuse;
+
+                color: #ff0000
+                background-color: #00990077
+                /* hex color: red red green green blue blue transparency transparency */
+
+                color: rgb(0, 0, 120)
+                background-color: rgba(0, 0, 120, 70) /* not sure if I did this right */
+                /* red, green, blue */
+                /* as you write, the newer code overwrites the old code */
+            }
+
+            .align_right{
+                width: 50%;
+                text-align: center;
+            } 
+
+            .align_justified{
+                text-align: justify;
+            }
+
+            .silly_text {
+                font-family: fantasy;
+            }
+
+            /* ID selectors begin with # */
+            #really_important{
+                /* font weights only work if they are supported */
+                font-weight: bold;
+                font-size: x-large;
+            }
+         </style>
+    </head>
+    <body>
+        <!-- Inline styling this will override any stylesheets above -->
+        <!-- margins: 1st number - top and bottom, 2nd number - left and right -->
+        <!-- margins: 1st no. - top, 2nd no. - right, 3rd no. - bottom, 4th no. - left -->
+        <!-- newer/last value will overwrite the previous one -->
+
+        <!-- <h1 style="margin: 20px 10px 5px 5px; marign-top: 50px"> -->
+        <h1>Heading 1 Displays Block</h1> 
+        <!-- whatever is written last will be picked up by the website--> 
+
+        <h2>Remember only one h1 per page</h2>
+
+        <p class="align_right">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum magna, eget gravida quam. Etiam vulputate, 
+            felis non rhoncus tristique, nunc metus fermentum neque, nec condimentum nibh risus a turpis. Pellentesque vel augue q
+            uis nisi hendrerit tempus id 
+            <span class="silly_text">
+            convallis tellus. Donec a eros in massa scelerisque malesuada. In ultricies lobortis frin
+            gilla. Etiam ultricies venenatis ex, sed luctus nisi congue eget. Maecenas vitae velit varius, viverra elit ut, fermen
+            tum arcu. Sed tristique, diam eu varius eleifend, tellus mi</span
+            > 
+            dignissim mi, quis ornare lectus ante eget sapien. Proin q
+            uis mi ornare, viverra ligula at, consectetur orci. Proin eget diam feugiat ligula cursus tincidunt. In hac habitasse 
+            platea dictumst.
+        </p>
+
+        <p id="really_important" class="align_justified">
+            dignissim mi, quis ornare lectus ante eget sapien. Proin q
+            uis mi ornare, viverra ligula at, consectetur orci. Proin eget diam feugiat ligula cursus tincidunt. In hac habitasse 
+            platea dictumst.
+        </p>
+    </body>
+</html>
