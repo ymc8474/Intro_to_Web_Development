@@ -1,0 +1,159 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+img {
+    /* scale to fill the wdith of the parent element */
+    width: 100%;
+    /* preserves the pixel aspect ratio */
+    height: auto;
+}
+/* above 3 are professor's default setup */
+
+/* Flexbox simple row layouts */
+/* container is parent and XXX are children */
+.container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* keeps it on screen, unwrap: line keeps going */
+    /* above settings are somewhat default */
+    /* some more properties so we can see our divs */
+    border: 1px solid purple;
+    background-color: rgba(255, 0, 255, 0.3);
+    min-height: 400px;
+}
+
+.item {
+    border: 1px solid cornflowerblue;
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 23%;
+    height: 300px;
+}
+
+/* Atomic CSS Design Pattern */
+
+.center {
+    display: flex;
+    /* horizontal distribution */
+    justify-content: center;
+    /* vertical alignment */
+    align-items: center;
+    /* align-content is not really used */
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.self-stretch {
+    align-self: stretch;
+    height: auto;
+    /* for when we switch things around */
+}
+
+/* Classic Layout Example */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%;
+    /* margin and padding behabe differently with box size and border boz */
+    /* don't need to subtract it fromt he width since the border box is already set from before */
+    min-height: 100px;
+    background-color: aqua;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* change the justify content values and ... */
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkcyan;
+}
+
+.grid item {
+    width: 31%;
+    margin: 1%;
+}
+
+.secondary-nav {
+    min-width: 25%;
+    background-color: aquamarine;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid grey; 
+}
+
+.menu span {
+    padding: 1rem;
+    /* 1rem: 16px */
+    font-size: 7rem;
+}
+
+.menu a {
+    /* a stands for anchor tag */
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    width: 100%;
+
+}
