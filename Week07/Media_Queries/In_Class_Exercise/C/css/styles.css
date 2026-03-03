@@ -1,0 +1,139 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop first styling approach */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../img/grey_wash_wall.png");
+    padding: 0 2rem;
+    position: relative; 
+}
+
+.brand {
+    margin: 0;
+    font-weight: 300;
+}
+
+header a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* Hide our mobile hhamburger icon on desktop */
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    min-width: 5rem;
+}
+
+.menu li a {
+    display: block; 
+    padding: 1rem;
+}
+
+.menu li a:hover {
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.thumb {
+    flex: 0 0 23%;
+    margin: 1rem auto; /* auto for horizontal */
+}
+
+/* Media Queries */
+
+/* Tablet Sized Screens with max only */
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+    body { /* class, not a tag so no dot */
+        background-color: green;
+    }
+
+    .thumb { /* how many can stack together */
+        flex: 0 0 45%;
+
+    }
+}
+
+/* Mobile Phone Max ONLY */
+/* This ones come last */
+@media screen and (max-width: 768px) {
+    body { 
+        background-color: rgb(255, 0, 230);
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center; /* need to override space inbetween */
+        align-items: stretch; /* rotates 90 degrees when you...? */
+        text-align: center;
+        padding: 0;
+    }
+
+    .brand {
+        margin: 0.5rem; /* 8px */
+    }
+
+    /* bring back our hamburger! */
+    .mobile-menu {
+        display: block; 
+        color: #aaa;
+        font-size: 2rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }   
+
+    .menu li { /* bored-radius can be used to make rounded corners */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    /* no point in doing hover state for phone */
+
+    .container {
+        flex-direction: column;
+    }
+
+    .thumb {
+        flex: 0 0 100%;
+    }
+}
+
+/* don't make something more complicated if you can do it in your langauge */
