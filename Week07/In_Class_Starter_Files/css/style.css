@@ -1,0 +1,195 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Zero out the annoying default margins */
+html, body {
+    margin: 0;
+}
+
+/* Scale the images to fit their parent container */
+img {
+    width: 100%;
+    height: auto;
+}
+/* Suggestion: If I'm sick of writing this, maybe I should copy it somewhere for future reference */
+
+/* Desktop First Styling */
+
+/* JUMBOTRON */
+/* div already has a class hero, that's why its a . */
+div.hero {
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    /* more to the image, actually a square, but overflow hides it */
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero article {
+    position: absolute; 
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    padding: 2%;
+    border: 1px solid red;
+    background: linear-gradient(to right, #1e5799 0%,#7db9e8 100%); 
+    /* You can just search the gradient up on the internet: https://cssgradient.io/ OR search: css gradient generator */
+    /* Parameters: (in what direction; 90deg left to right, color + transparency, end color (right side of rectangle) */
+    /* You have to seperate with commas, which you don't usually do, because this takes parameters */
+    /* consider leaving the link to give the people some credit */
+}
+
+/* link for buttons? */
+/* reminder: a is for anchor tag */
+button, a.info {
+    padding: 10px 20px; 
+    /* common convention of doing half? */
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    /* removes the underline */
+
+    text-align: center;
+
+    /* Transitions get applied here at the base sate of an element (base = waht the default style is when you load the page) */
+    transition: all 1s ease;
+    width: 10rem;
+}
+/* people can still grab your image, but they can't if it's a background image, so consider watermarking to protect important images */
+
+button:hover, a.info:hover {
+    background-color: chartreuse;
+    color: #333;
+    text-transform: lowercase;
+    width: 10.5rem;
+    /* transform-origin: 50% 50%; rotate around the corner instead of center? */
+}
+
+/* GALLERY */
+
+/* text over images when we hover */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* so they don't keep going in a single line, like a grid */
+    justify-content: space-between;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 30%;
+    /* 
+    flex-grow: 0; don't get any bigger, stay at basis size
+    flex-grow: 1; yes grow at the normal rate
+    flex-grow: 2; yes grow at 2x the normal rate
+
+    flex-basis: size and unit; think of it like setting the default width 
+
+    parameters: grow, shrink, basis
+    */
+    margin: 1.5rem auto;
+}
+
+/* parent element has this class, and the img part is the child/descendant (nested somewhere between) */
+/* prepare the img intial state for transforms */
+.thumb img {
+    transform: scale(1);
+    transform: rotate(0deg);
+    transition: all 1s ease;
+    /* of not all, can just do like scale or rotate */
+}
+
+/* Image transforms on hover */
+.thumb img:hover {. /* apparently this won't work anymore since there is now a mask over it */
+    transform: scale(1.5) rotate(-20deg);
+    /* no commas */
+}
+/* because of overflow-hidden, it stays in its box */
+
+.mask {
+    /* position/stretch each edge to its parents edges */
+    position: absolute;
+    /* now the words are invisible */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* this is the way to make the fill of the container with the top, bottom, left, right*/
+
+    /* quick way to center in both axis */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 1s ease;
+    /* opacity: 0;  */
+    /* make something fade in with opacity and transition */
+    pointer-events: all;
+    background-color: rgba(255, 255, 255, 0.5); /* this goes after transition because it happens after*/
+}
+
+/* class for parents? */
+.mask h2 {
+    margin: 0;
+}
+
+.mask p {
+    font-style: italic;
+}
+
+.thumb:hover mask {
+    opacity: 1;
+}
+
+.thumb .mask h2, .thumb .mask p, .thumb .mask a {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+.thumb:hover .mask h2, .thumb:hover .mask p, .thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet Landscape */
+@media screen and (max-width >= 1024px) {
+    .hero article {
+        width: 75%;
+    }
+
+    .thumb {
+        flex-basis: 45%
+    }
+}
+
+/* Smaller than an Ipad Classic AKA Phone */
+@media screen and (max-width < 767px) {
+    .container {
+        flex-direction: column;
+        padding: 0.75rem;
+    }
+
+    .hero article {
+        width: 100%;
+        bottom: 0;
+        padding: 1.5rem;
+    }
+}
+
+/* note to self: I think I messed up a bit of the hover, so may need to go back for the transitions */
+/* the rotations don't work...? */
