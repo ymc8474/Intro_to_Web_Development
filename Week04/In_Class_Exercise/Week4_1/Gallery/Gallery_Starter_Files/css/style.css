@@ -1,6 +1,6 @@
 /* I MAY HAVE USED THE WRONG FILE, BUT IT WORKS */
 
-/* always load custom foonts and other dependencies (like other stylesheets or CSS vars) first */
+/* always load custom fonts and other dependencies (like other stylesheets or CSS vars) first */
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
 /* Universal selector to reset some defaults */

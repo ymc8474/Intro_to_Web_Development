@@ -1,17 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Gravitas+One&display=swap');
+/* --- FONTS --- */
+
+/* Signature: Sacramento */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* Titles: DM Serif Display */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* Subtitles: Space Mono */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Main Text: Google Sans */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+/* Buttons: Comfortaa */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+/* --- GLOBAL STYLES --- */
+* {
+
+}
 
 html {
 
 }
 
-header {
+body {}
 
+/* Background */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/backgrounds/wavy_checkered_background.jpg');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: white;
+}
+
+.header_content {
+    position: relative;
+    z-index: 2;
+}
+
+.header_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/backgrounds/dots_and_circles.jpg');
+    background-position: center;
+    background-size: contain;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 header h1 {
+    font-family: Sacramento, cursive;
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Comfortaa, sans-serif;
+    color: black;
+}
+
+nav a:hover {
 
 }
 
-body {
+nav a.active {
 
 }
+
+/* --- MEDIA QUERIES --- */
+
