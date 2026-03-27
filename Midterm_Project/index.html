@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yuetwon Melody Chui</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
   </head>
 
   <body>
@@ -32,6 +33,10 @@
           </ul>
         </nav>
     </header>
+
+    <div class="scroll-arrow" id="scroll-arrow">
+          <span class="material-symbols-outlined">stat_minus_1</span>
+        </div>
 
     <div class="center_name">
       <h2 id="typewriter"></h2>
@@ -104,6 +109,16 @@
         document.querySelector('.mobile-menu').onclick = function() {
             document.querySelector('header nav').classList.toggle('show');
         }
+
+        document.getElementById('scroll-arrow').addEventListener('click', function () {
+          window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', function () {
+          const arrow = document.getElementById('scroll-arrow');
+          const nearBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 100;
+          arrow.style.opacity = nearBottom ? '0' : '0.75';
+        });
     </script>
   </body>
 </html>

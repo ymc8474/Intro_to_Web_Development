@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+html {
+
+}
+
 body {
     color: white;
 }
@@ -37,6 +41,20 @@ h2 {
 
 h3 {
     font-family: Space Mono, serif;
+}
+
+.scroll-arrow {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    animation: bounce 1.5s infinite;
+    color: white;
+    opacity: 0.75;
+    transition: opacity 0.4s ease;
+}
+
+.scroll-arrow .material-symbols-outlined {
+    font-size: 36px;
 }
 
 /* Background */
@@ -183,6 +201,7 @@ footer {
 
 .upcoming_projects h2 {
     margin-bottom: 40px;
+    margin-top: 200px;
 }
 
 .project1 {
@@ -213,6 +232,7 @@ footer {
     width: 450px;
     height: 250px;
     object-fit: cover;
+    border: 15px solid white;
 }
 
 /* --- Education Page --- */
@@ -418,6 +438,7 @@ footer {
     width: 350px;
     object-fit: cover;
     flex-shrink: 0;
+    border: 15px solid white;
 }
 
 /* --- Work Experience Page --- */
@@ -543,7 +564,7 @@ footer {
         right: -100%;
         width: 60%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(0, 0, 0, 0.90);
         padding: 100px 20px;
         z-index: 200;
         transition: right 0.3s ease;
@@ -583,7 +604,7 @@ footer {
         border-bottom: none;
     }
 
-    /* --- General / Shared --- */
+    /* --- Global --- */
     .center_name h2 {
         text-align: center;
         padding: 0 20px;
@@ -591,6 +612,10 @@ footer {
     
     footer {
         display: none;
+    }
+
+    .scroll-arrow {
+        bottom: 20px;
     }
 
     /* --- Introduction Page --- */
@@ -630,14 +655,93 @@ footer {
     .upcoming_projects {
         width: 90%;
     }
+
+    /* --- Education Page --- */
+    .school {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        text-align: center;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 5%;
+    }
+
+    .school_img img {
+        width: 90vw;
+        height: 250px;
+    }
+
+    .course_grp {
+        flex-direction: column;
+        width: 90%;
+        min-height: unset; 
+        gap: 20px;
+        padding: 60px 5% 80px;
+        margin-bottom: 150px;
+    }
+
+    .course_pics {
+        width: 90vw;
+        height: 250px;
+        justify-content: center;
+    }
+
+    .course_pics img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* --- Projects Page --- */
+    .projects .bg {
+        background-position: right center;
+    }
+
+    .project_txt {
+        margin-top: 200px;
+    }
+
+    /* --- Volunteer Page --- */
+
+    /* --- Work Experience Page --- */
+    .work_experience .bg {
+        background-size: 170%;
+    }
+
+    .experience ul {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    /* --- Awards Page --- */
 }
 
 /* --- Tablet --- */
- @media screen and (min-width: 769px) and (max-width: 1024px) {
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* --- Global --- */
+    header {
+        padding: 0 3%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+
     .center_name h2 {
         font-size: 5rem;
     }
 
+    /* --- Introduction Page --- */
     .about_me {
         width: 85%;
         gap: 30px;
@@ -665,6 +769,7 @@ footer {
         height: 220px;
     }
 
+    /* --- Education Page --- */
     .school {
         gap: 30px;
     }
@@ -688,31 +793,29 @@ footer {
         height: 180px;
     }
 
-    .project_txt, 
-    .project_imggrp,
-    .award {
+    /* --- Projects Page --- */
+    .project_txt {
         padding: 0 10%;
     }
 
+    .project_imggrp {
+        margin-bottom: 200px;
+    }
+
+    /* -- Volunteer Page --- */
     .volunteer_sector {
         width: 85%;
     }
 
+    /* --- Work Experience --- */
     .experience {
         width: 85%;
+        margin: 700px auto;
     }
 
-    header {
-        padding: 0 3%;
-    }
-
-    nav a {
-        padding: 0 10px;
-        font-size: 0.9rem;
-    }
-
-    footer nav ul {
-        font-size: 0.8rem;
+    /* --- Awards Page --- */
+    .award {
+        padding: 0 10%;
     }
 }
 
@@ -725,4 +828,36 @@ footer {
 @keyframes blink {
     from, to {opacity: 1;}
     50% {opacity: 0;}
+}
+
+@keyframes bounce {
+    0%, 100% {transform: translateX(-50%) translateY(0);}
+    50% {transform: translateX(-50%) translateY(8px);}
+}
+
+
+
+
+
+.school-nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 99;
+}
+
+.school-nav .material-symbols-outlined {
+    font-size: 36px;
+    color: darkgrey;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.school-nav .material-symbols-outlined:hover {
+    opacity: 1;
 }
