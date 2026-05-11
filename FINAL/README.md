@@ -5,4 +5,4 @@ Reference Website Google Sites: https://sites.google.com/view/aurabynisha/welcom
 
 Final Presentation (Code Snippet): https://docs.google.com/presentation/d/160VPRQCFq7DyQAyfVasAVwfu1q6e5g0XxzcxlvZe5Po/edit?usp=sharing 
 
-Live Hosted Site: 
+Live Hosted Site: https://htmlpreview.github.io/?https://raw.githubusercontent.com/ymc8474/Intro_to_Web_Development/main/FINAL/index.html 
